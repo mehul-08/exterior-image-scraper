@@ -514,15 +514,15 @@ def save_output(info: dict, photos: list, filename_base: str):
     print(f"✅ JSON saved: {json_path}")
     print(f"✅ CSV saved: {csv_path}")
 
-if __name__ == "__main__":
-    input_url = input("Enter Google Maps Place URL: ").strip()
-    result = process_google_maps_url(input_url)
-    if not result:
-        print("❌ Failed to process the URL.")
-    else:
-        info, photos = result
-        filename_base = info.get("name", "place").replace(" ", "_").replace("/", "_")
-        save_output(info, photos, filename_base)
+# if __name__ == "__main__":
+#     input_url = input("Enter Google Maps Place URL: ").strip()
+#     result = process_google_maps_url(input_url)
+#     if not result:
+#         print("❌ Failed to process the URL.")
+#     else:
+#         info, photos = result
+#         filename_base = info.get("name", "place").replace(" ", "_").replace("/", "_")
+#         save_output(info, photos, filename_base)
 
 
 
